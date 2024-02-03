@@ -57,7 +57,7 @@ function checkAns(idx){
         setTimeout(function(){
             document.querySelector('body').style.backgroundColor = 'white';
         },150);
-        high();
+       // high();
         reset();
     }
 
@@ -83,14 +83,4 @@ function reset() {
     gameSeq = [];
     userSeq = [];
 
-}
-
-function high() {
-    let highScr;
-    if(level>highScr){
-        highScr = level;
-    }
-    let a = document.createElement('h2');
-    a.innerHTML = `Your Highest Score is : <b>${highScr}</b>`;
-    h2.append(a);
 }
